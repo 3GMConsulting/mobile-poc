@@ -1,0 +1,5 @@
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDTO\bin\Debug\SpartanDTO.dll
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDTO\bin\Debug\SpartanDTO.pdb
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDTO\obj\Debug\SpartanDTO.csprojAssemblyReference.cache
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDTO\obj\Debug\SpartanDTO.dll
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDTO\obj\Debug\SpartanDTO.pdb
