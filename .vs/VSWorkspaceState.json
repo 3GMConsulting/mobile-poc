@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\API",
+    "\\API\\SpartanAPI",
+    "\\Scripts base de datos",
+    "\\XamarinApp"
   ],
+  "SelectedNode": "\\XamarinApp",
   "PreviewInSolutionExplorer": false
 }
