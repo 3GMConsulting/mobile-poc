@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MobilePOCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Usuario1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Contrasena" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NombreCompleto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="IdUsuarioPerfil" Type="Int32" />
+    <Property Name="IdUsuarioSeguridad" Type="Int32" />
+    <NavigationProperty Name="UsuarioPerfil" Relationship="Self.FK__Usuario__IdUsuar__3B75D760" FromRole="Usuario" ToRole="UsuarioPerfil" />
+    <NavigationProperty Name="UsuarioSeguridad" Relationship="Self.FK__Usuario__IdUsuar__3C69FB99" FromRole="Usuario" ToRole="UsuarioSeguridad" />
+  </EntityType>
+  <EntityType Name="UsuarioPerfil">
+    <Key>
+      <PropertyRef Name="IdUsuarioPerfil" />
+    </Key>
+    <Property Name="IdUsuarioPerfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FotoPerfil" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="EstadoPerfil" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ScoreJugador" Type="Int32" />
+    <Property Name="ScoreObservador" Type="Int32" />
+    <Property Name="ScoreGlobal" Type="Int32" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK__Usuario__IdUsuar__3B75D760" FromRole="UsuarioPerfil" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="UsuarioSeguridad">
+    <Key>
+      <PropertyRef Name="IdUsuarioSeguridad" />
+    </Key>
+    <Property Name="IdUsuarioSeguridad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PreguntaSecreta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RespuestaSecreta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK__Usuario__IdUsuar__3C69FB99" FromRole="UsuarioSeguridad" ToRole="Usuario" />
+  </EntityType>
+  <Association Name="FK__Usuario__IdUsuar__3B75D760">
+    <End Role="UsuarioPerfil" Type="Self.UsuarioPerfil" Multiplicity="0..1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuarioPerfil">
+        <PropertyRef Name="IdUsuarioPerfil" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="IdUsuarioPerfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Usuario__IdUsuar__3C69FB99">
+    <End Role="UsuarioSeguridad" Type="Self.UsuarioSeguridad" Multiplicity="0..1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuarioSeguridad">
+        <PropertyRef Name="IdUsuarioSeguridad" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="IdUsuarioSeguridad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MobilePOCEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Usuarios" EntityType="Self.Usuario" />
+    <EntitySet Name="UsuarioPerfils" EntityType="Self.UsuarioPerfil" />
+    <EntitySet Name="UsuarioSeguridads" EntityType="Self.UsuarioSeguridad" />
+    <AssociationSet Name="FK__Usuario__IdUsuar__3B75D760" Association="Self.FK__Usuario__IdUsuar__3B75D760">
+      <End Role="UsuarioPerfil" EntitySet="UsuarioPerfils" />
+      <End Role="Usuario" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Usuario__IdUsuar__3C69FB99" Association="Self.FK__Usuario__IdUsuar__3C69FB99">
+      <End Role="UsuarioSeguridad" EntitySet="UsuarioSeguridads" />
+      <End Role="Usuario" EntitySet="Usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
