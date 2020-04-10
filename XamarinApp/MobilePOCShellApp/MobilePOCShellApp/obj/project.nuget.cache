@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UvD5RlDTMB0Qh8Qqm63B8pS09+lRcq4O2dOcfVzqmomXn17zJrouohQKEMg14cF8ExQVhbASvScHlY97wYdENg==",
+  "dgSpecHash": "nT2HUSH/NRbgNZ2zTSMYYRwGASkQO7/HCkjuZQz/SGZEyi17jDXbAuf7UlpKXkpRvt9m5KRaGksqWQgit9lgtw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj",
+  "projectFilePath": "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

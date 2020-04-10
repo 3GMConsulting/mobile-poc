@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android\\MobilePOCShellApp.Android.csproj": {}
+    "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android\\MobilePOCShellApp.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android\\MobilePOCShellApp.Android.csproj": {
+    "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android\\MobilePOCShellApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android\\MobilePOCShellApp.Android.csproj",
+        "projectUniqueName": "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android\\MobilePOCShellApp.Android.csproj",
         "projectName": "MobilePOCShellApp.Android",
-        "projectPath": "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android\\MobilePOCShellApp.Android.csproj",
+        "projectPath": "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android\\MobilePOCShellApp.Android.csproj",
         "packagesPath": "C:\\Users\\fernando.b.martinez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android\\obj\\",
+        "outputPath": "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj": {
-                "projectPath": "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj"
+              "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj": {
+                "projectPath": "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj"
               }
             }
           }
@@ -54,14 +54,14 @@
         }
       }
     },
-    "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj": {
+    "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj",
+        "projectUniqueName": "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj",
         "projectName": "MobilePOCShellApp",
-        "projectPath": "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj",
+        "projectPath": "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj",
         "packagesPath": "C:\\Users\\fernando.b.martinez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\obj\\",
+        "outputPath": "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
