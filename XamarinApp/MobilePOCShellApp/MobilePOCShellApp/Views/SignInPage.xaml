@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MobilePOCShellApp.Views.SignInPage">
+    <!--Page Content--> 
+    <ContentPage.Content>
+
+        <!--Begin StackLayout-->
+        <StackLayout BackgroundColor="AliceBlue">
+            <StackLayout BackgroundColor="Accent" Margin="10,10,10,10">
+                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                    <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
+                </ContentView>
+            </StackLayout>
+            <StackLayout BackgroundColor="AliceBlue">
+                <!--Username Begin-->
+                <StackLayout>
+                    <!--<Label Text="Username" HorizontalOptions="Start" 
+                           VerticalOptions="Start" FontSize="Large" 
+                           Margin="50,25,50,0"/>-->
+                    <Entry Text="Username" 
+                           HorizontalOptions="Fill" 
+                           VerticalOptions="Center"
+                           Margin="50,0,50,0"
+                           FontSize="Medium"/>
+                </StackLayout>
+
+                <!--Password Begin-->
+                <StackLayout>
+                    <!--<Label Text="Password" HorizontalOptions="Start" 
+                           VerticalOptions="Start" FontSize="Large" 
+                           Margin="50,25,50,0"/>-->
+                    <Entry Text="Password" 
+                           HorizontalOptions="Fill" 
+                           VerticalOptions="Center"
+                           Margin="50,0,50,0"
+                           FontSize="Medium"/>
+                    <Label Text="Forget Password?" HorizontalOptions="End"
+                           VerticalOptions="Center" Margin="0,0,50,0"/>
+                </StackLayout>
+                
+                <!--Sign In Button-->
+                <StackLayout>
+                    <Button Text="Sign In" HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="Start" FontAttributes="Bold"
+                            FontSize="Medium"
+                            Margin="25,25,25,0"/>
+                    <Label Text="Sign In using:" HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand" FontAttributes="Italic"
+                           FontSize="Caption" Margin="0,5,0,0"/>
+                    <Button Text="Google" ImageSource=""
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="Start" FontAttributes="Bold"
+                            FontSize="Medium" Margin="0,5,0,0"/>
+                    <Button Text="Facebook" ImageSource=""
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="Start" FontAttributes="Bold"
+                            FontSize="Medium"/>
+
+                    <Label Text="Don't have an account?" HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand" FontAttributes="Italic"
+                           FontSize="Caption" Margin="0,5,0,0"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
