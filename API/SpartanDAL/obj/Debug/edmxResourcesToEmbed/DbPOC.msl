@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MobilePOCModelStoreContainer" CdmEntityContainer="MobilePOCEntities">
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="MobilePOCModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Usuario1" ColumnName="Usuario" />
+          <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="IdUsuarioPerfil" ColumnName="IdUsuarioPerfil" />
+          <ScalarProperty Name="IdUsuarioSeguridad" ColumnName="IdUsuarioSeguridad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsuarioPerfils">
+      <EntityTypeMapping TypeName="MobilePOCModel.UsuarioPerfil">
+        <MappingFragment StoreEntitySet="UsuarioPerfil">
+          <ScalarProperty Name="IdUsuarioPerfil" ColumnName="IdUsuarioPerfil" />
+          <ScalarProperty Name="FotoPerfil" ColumnName="FotoPerfil" />
+          <ScalarProperty Name="EstadoPerfil" ColumnName="EstadoPerfil" />
+          <ScalarProperty Name="ScoreJugador" ColumnName="ScoreJugador" />
+          <ScalarProperty Name="ScoreObservador" ColumnName="ScoreObservador" />
+          <ScalarProperty Name="ScoreGlobal" ColumnName="ScoreGlobal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsuarioSeguridads">
+      <EntityTypeMapping TypeName="MobilePOCModel.UsuarioSeguridad">
+        <MappingFragment StoreEntitySet="UsuarioSeguridad">
+          <ScalarProperty Name="IdUsuarioSeguridad" ColumnName="IdUsuarioSeguridad" />
+          <ScalarProperty Name="PreguntaSecreta" ColumnName="PreguntaSecreta" />
+          <ScalarProperty Name="RespuestaSecreta" ColumnName="RespuestaSecreta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
