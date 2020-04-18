@@ -64,6 +64,8 @@
       <DependentUpon>DbPOC.edmx</DependentUpon>
     </Compile>
     <Compile Include="Extensions\DtoMapper.cs" />
+    <Compile Include="Implentations\BaseRepository.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuario.cs">
       <DependentUpon>DbPOC.tt</DependentUpon>
@@ -71,7 +73,6 @@
     <Compile Include="UsuarioPerfil.cs">
       <DependentUpon>DbPOC.tt</DependentUpon>
     </Compile>
-    <Compile Include="UsuarioQuerys.cs" />
     <Compile Include="UsuarioSeguridad.cs">
       <DependentUpon>DbPOC.tt</DependentUpon>
     </Compile>
@@ -103,12 +104,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SpartanDTO\SpartanDTO.csproj">
-      <Project>{e0ba1547-084b-4490-a1ad-b59f39896200}</Project>
-      <Name>SpartanDTO</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
