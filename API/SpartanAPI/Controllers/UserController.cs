@@ -5,49 +5,39 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using SpartanDAL;
+using SpartanDAL.Implentations;
 
 namespace SpartanAPI.Controllers
 {
     public class UserController : ApiController
     {
-        private UsuarioQuerys dbQuerys;
+        private readonly BaseRepository<Usuario> dbQuerys;
 
-        public UserController()
-        {
-            dbQuerys = new UsuarioQuerys();
-        }
+        public UserController() =>        
+            dbQuerys = new BaseRepository<Usuario>(new MobilePOCEntities());        
 
-        // GET: api/User
+        [Route("user/")]
         public IHttpActionResult Get()
         {
-            return Json(dbQuerys.GetAllUsers());
+            return Json(dbQuerys.Get());
         }
 
-        // GET: api/User/5
-        public IHttpActionResult Get(int id)
+        [Route("user/{id}/")]
+        public IHttpActionResult GetById(int id)
         {
-            return Json(dbQuerys.GetUserById(id));
+            return Json(dbQuerys.GetByID(id));
         }
 
-        // GET: api/User/5
-        public IHttpActionResult GetUserProfile(int id)
+        [Route("user/post/{usuarioPost}/")]
+        public void Post([FromBody]Usuario usuarioPost)
         {
-            return Ok(dbQuerys.GetUserProfileById(id));
+            dbQuerys.Insert(usuarioPost);
         }
 
-        // POST: api/User
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT: api/User/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/User/5
+        [Route("user/delete/{id}/")]
         public void Delete(int id)
         {
+            dbQuerys.Delete(id);
         }
     }
 }
