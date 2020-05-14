@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\API",
+    "\\API\\SpartanAPI",
+    "\\Scripts base de datos",
+    "\\XamarinApp",
+    "\\XamarinApp\\MobilePOCShellApp",
+    "\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp",
+    "\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android"
   ],
+  "SelectedNode": "\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.sln",
   "PreviewInSolutionExplorer": false
 }

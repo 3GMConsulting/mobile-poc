@@ -1,0 +1,9 @@
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\XamarinApp\MobilePOCShellApp\MobilePOCAPI\bin\Debug\netstandard2.0\MobilePOCAPI.deps.json
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\XamarinApp\MobilePOCShellApp\MobilePOCAPI\bin\Debug\netstandard2.0\MobilePOCAPI.dll
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\XamarinApp\MobilePOCShellApp\MobilePOCAPI\bin\Debug\netstandard2.0\MobilePOCAPI.pdb
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\XamarinApp\MobilePOCShellApp\MobilePOCAPI\obj\Debug\netstandard2.0\MobilePOCAPI.csprojAssemblyReference.cache
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\XamarinApp\MobilePOCShellApp\MobilePOCAPI\obj\Debug\netstandard2.0\MobilePOCAPI.csproj.CoreCompileInputs.cache
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\XamarinApp\MobilePOCShellApp\MobilePOCAPI\obj\Debug\netstandard2.0\MobilePOCAPI.AssemblyInfoInputs.cache
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\XamarinApp\MobilePOCShellApp\MobilePOCAPI\obj\Debug\netstandard2.0\MobilePOCAPI.AssemblyInfo.cs
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\XamarinApp\MobilePOCShellApp\MobilePOCAPI\obj\Debug\netstandard2.0\MobilePOCAPI.dll
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\XamarinApp\MobilePOCShellApp\MobilePOCAPI\obj\Debug\netstandard2.0\MobilePOCAPI.pdb

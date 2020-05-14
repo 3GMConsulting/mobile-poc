@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "nT2HUSH/NRbgNZ2zTSMYYRwGASkQO7/HCkjuZQz/SGZEyi17jDXbAuf7UlpKXkpRvt9m5KRaGksqWQgit9lgtw==",
+  "dgSpecHash": "JbZA5qHChYECKW21R97bcwsFpANtoDI6qQ/N+WSG8iiITO2UNjPN/MlEP+OtzUjWvSoXSezWqmJRQq9J5QGU7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj",
+  "projectFilePath": "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp\\MobilePOCShellApp.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\fernando.b.martinez\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\fernando.b.martinez\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"

@@ -1,0 +1,23 @@
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDAL\bin\Debug\SpartanDAL.dll.config
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDAL\bin\Debug\SpartanDAL.dll
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDAL\bin\Debug\SpartanDAL.pdb
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDAL\bin\Debug\EntityFramework.dll
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDAL\bin\Debug\SpartanDTO.dll
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDAL\bin\Debug\SpartanDTO.pdb
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDAL\bin\Debug\EntityFramework.xml
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDAL\obj\Debug\SpartanDAL.csprojAssemblyReference.cache
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDAL\obj\Debug\SpartanDAL.csproj.CopyComplete
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDAL\obj\Debug\SpartanDAL.dll
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanDAL\obj\Debug\SpartanDAL.pdb
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\API\SpartanDAL\bin\Debug\SpartanDAL.dll.config
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\API\SpartanDAL\bin\Debug\SpartanDAL.dll
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\API\SpartanDAL\bin\Debug\SpartanDAL.pdb
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\API\SpartanDAL\bin\Debug\EntityFramework.dll
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\API\SpartanDAL\bin\Debug\SpartanDTO.dll
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\API\SpartanDAL\bin\Debug\SpartanDTO.pdb
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\API\SpartanDAL\bin\Debug\EntityFramework.xml
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\API\SpartanDAL\obj\Debug\SpartanDAL.csprojAssemblyReference.cache
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\API\SpartanDAL\obj\Debug\SpartanDAL.csproj.CoreCompileInputs.cache
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\API\SpartanDAL\obj\Debug\SpartanDAL.csproj.CopyComplete
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\API\SpartanDAL\obj\Debug\SpartanDAL.dll
+C:\Users\fernando.b.martinez\source\repos\mobile-poc\API\SpartanDAL\obj\Debug\SpartanDAL.pdb

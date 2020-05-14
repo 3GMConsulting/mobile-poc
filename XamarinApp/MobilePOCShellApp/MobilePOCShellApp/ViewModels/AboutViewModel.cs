@@ -2,6 +2,8 @@
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using MobilePOCAPI;
+using System.Collections.Generic;
 
 namespace MobilePOCShellApp.ViewModels
 {

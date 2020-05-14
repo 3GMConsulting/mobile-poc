@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MobilePOCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Name="IdUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Usuario" Type="nvarchar(max)" />
+          <Property Name="Contrasena" Type="nvarchar(max)" />
+          <Property Name="NombreCompleto" Type="nvarchar(max)" />
+          <Property Name="Mail" Type="nvarchar(max)" />
+          <Property Name="FechaNacimiento" Type="date" />
+          <Property Name="IdUsuarioPerfil" Type="int" />
+          <Property Name="IdUsuarioSeguridad" Type="int" />
+        </EntityType>
+        <EntityType Name="UsuarioPerfil">
+          <Key>
+            <PropertyRef Name="IdUsuarioPerfil" />
+          </Key>
+          <Property Name="IdUsuarioPerfil" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FotoPerfil" Type="varbinary(max)" />
+          <Property Name="EstadoPerfil" Type="nvarchar(max)" />
+          <Property Name="ScoreJugador" Type="int" />
+          <Property Name="ScoreObservador" Type="int" />
+          <Property Name="ScoreGlobal" Type="int" />
+        </EntityType>
+        <EntityType Name="UsuarioSeguridad">
+          <Key>
+            <PropertyRef Name="IdUsuarioSeguridad" />
+          </Key>
+          <Property Name="IdUsuarioSeguridad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PreguntaSecreta" Type="nvarchar(max)" />
+          <Property Name="RespuestaSecreta" Type="nvarchar(max)" />
+        </EntityType>
+        <Association Name="FK__Usuario__IdUsuar__3B75D760">
+          <End Role="UsuarioPerfil" Type="Self.UsuarioPerfil" Multiplicity="0..1" />
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UsuarioPerfil">
+              <PropertyRef Name="IdUsuarioPerfil" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="IdUsuarioPerfil" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Usuario__IdUsuar__3C69FB99">
+          <End Role="UsuarioSeguridad" Type="Self.UsuarioSeguridad" Multiplicity="0..1" />
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UsuarioSeguridad">
+              <PropertyRef Name="IdUsuarioSeguridad" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="IdUsuarioSeguridad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MobilePOCModelStoreContainer">
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UsuarioPerfil" EntityType="Self.UsuarioPerfil" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UsuarioSeguridad" EntityType="Self.UsuarioSeguridad" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Usuario__IdUsuar__3B75D760" Association="Self.FK__Usuario__IdUsuar__3B75D760">
+            <End Role="UsuarioPerfil" EntitySet="UsuarioPerfil" />
+            <End Role="Usuario" EntitySet="Usuario" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Usuario__IdUsuar__3C69FB99" Association="Self.FK__Usuario__IdUsuar__3C69FB99">
+            <End Role="UsuarioSeguridad" EntitySet="UsuarioSeguridad" />
+            <End Role="Usuario" EntitySet="Usuario" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MobilePOCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Usuario1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Contrasena" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NombreCompleto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+          <Property Name="IdUsuarioPerfil" Type="Int32" />
+          <Property Name="IdUsuarioSeguridad" Type="Int32" />
+          <NavigationProperty Name="UsuarioPerfil" Relationship="Self.FK__Usuario__IdUsuar__3B75D760" FromRole="Usuario" ToRole="UsuarioPerfil" />
+          <NavigationProperty Name="UsuarioSeguridad" Relationship="Self.FK__Usuario__IdUsuar__3C69FB99" FromRole="Usuario" ToRole="UsuarioSeguridad" />
+        </EntityType>
+        <EntityType Name="UsuarioPerfil">
+          <Key>
+            <PropertyRef Name="IdUsuarioPerfil" />
+          </Key>
+          <Property Name="IdUsuarioPerfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FotoPerfil" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="EstadoPerfil" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ScoreJugador" Type="Int32" />
+          <Property Name="ScoreObservador" Type="Int32" />
+          <Property Name="ScoreGlobal" Type="Int32" />
+          <NavigationProperty Name="Usuarios" Relationship="Self.FK__Usuario__IdUsuar__3B75D760" FromRole="UsuarioPerfil" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="UsuarioSeguridad">
+          <Key>
+            <PropertyRef Name="IdUsuarioSeguridad" />
+          </Key>
+          <Property Name="IdUsuarioSeguridad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PreguntaSecreta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RespuestaSecreta" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Usuarios" Relationship="Self.FK__Usuario__IdUsuar__3C69FB99" FromRole="UsuarioSeguridad" ToRole="Usuario" />
+        </EntityType>
+        <Association Name="FK__Usuario__IdUsuar__3B75D760">
+          <End Role="UsuarioPerfil" Type="Self.UsuarioPerfil" Multiplicity="0..1" />
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UsuarioPerfil">
+              <PropertyRef Name="IdUsuarioPerfil" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="IdUsuarioPerfil" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Usuario__IdUsuar__3C69FB99">
+          <End Role="UsuarioSeguridad" Type="Self.UsuarioSeguridad" Multiplicity="0..1" />
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UsuarioSeguridad">
+              <PropertyRef Name="IdUsuarioSeguridad" />
+            </Principal>
+            <Dependent Role="Usuario">
+              <PropertyRef Name="IdUsuarioSeguridad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MobilePOCEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Usuarios" EntityType="Self.Usuario" />
+          <EntitySet Name="UsuarioPerfils" EntityType="Self.UsuarioPerfil" />
+          <EntitySet Name="UsuarioSeguridads" EntityType="Self.UsuarioSeguridad" />
+          <AssociationSet Name="FK__Usuario__IdUsuar__3B75D760" Association="Self.FK__Usuario__IdUsuar__3B75D760">
+            <End Role="UsuarioPerfil" EntitySet="UsuarioPerfils" />
+            <End Role="Usuario" EntitySet="Usuarios" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Usuario__IdUsuar__3C69FB99" Association="Self.FK__Usuario__IdUsuar__3C69FB99">
+            <End Role="UsuarioSeguridad" EntitySet="UsuarioSeguridads" />
+            <End Role="Usuario" EntitySet="Usuarios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MobilePOCModelStoreContainer" CdmEntityContainer="MobilePOCEntities">
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="MobilePOCModel.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+                <ScalarProperty Name="Usuario1" ColumnName="Usuario" />
+                <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+                <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+                <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+                <ScalarProperty Name="IdUsuarioPerfil" ColumnName="IdUsuarioPerfil" />
+                <ScalarProperty Name="IdUsuarioSeguridad" ColumnName="IdUsuarioSeguridad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UsuarioPerfils">
+            <EntityTypeMapping TypeName="MobilePOCModel.UsuarioPerfil">
+              <MappingFragment StoreEntitySet="UsuarioPerfil">
+                <ScalarProperty Name="IdUsuarioPerfil" ColumnName="IdUsuarioPerfil" />
+                <ScalarProperty Name="FotoPerfil" ColumnName="FotoPerfil" />
+                <ScalarProperty Name="EstadoPerfil" ColumnName="EstadoPerfil" />
+                <ScalarProperty Name="ScoreJugador" ColumnName="ScoreJugador" />
+                <ScalarProperty Name="ScoreObservador" ColumnName="ScoreObservador" />
+                <ScalarProperty Name="ScoreGlobal" ColumnName="ScoreGlobal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UsuarioSeguridads">
+            <EntityTypeMapping TypeName="MobilePOCModel.UsuarioSeguridad">
+              <MappingFragment StoreEntitySet="UsuarioSeguridad">
+                <ScalarProperty Name="IdUsuarioSeguridad" ColumnName="IdUsuarioSeguridad" />
+                <ScalarProperty Name="PreguntaSecreta" ColumnName="PreguntaSecreta" />
+                <ScalarProperty Name="RespuestaSecreta" ColumnName="RespuestaSecreta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

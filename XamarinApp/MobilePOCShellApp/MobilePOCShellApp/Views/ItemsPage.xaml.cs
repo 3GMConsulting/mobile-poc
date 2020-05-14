@@ -46,5 +46,8 @@ namespace MobilePOCShellApp.Views
             if (viewModel.Items.Count == 0)
                 viewModel.IsBusy = true;
         }
+
+        async void Login_Clicked(object sender, EventArgs e) => await Navigation.PushModalAsync(new NavigationPage(new SignInPage()));
+        
     }
 }

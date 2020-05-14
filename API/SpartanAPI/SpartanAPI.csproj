@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -101,8 +102,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpartanBLL\SpartanBLL.csproj">
+      <Project>{e3031248-b9ba-4674-ad27-367918457615}</Project>
+      <Name>SpartanBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpartanDAL\SpartanDAL.csproj">
+      <Project>{79a13426-8b55-4248-b366-960f6baa3a3e}</Project>
+      <Name>SpartanDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpartanDTO\SpartanDTO.csproj">
+      <Project>{e0ba1547-084b-4490-a1ad-b59f39896200}</Project>
+      <Name>SpartanDTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

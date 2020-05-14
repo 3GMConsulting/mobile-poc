@@ -14,7 +14,11 @@ namespace MobilePOCShellApp
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            //Inicio Modificación - FernandoAMartinez - 15/04/2020
+            DependencyService.Register<UsuarioDataStore>();
+            //MainPage = new AppShell();
+            MainPage = new SignInPage();
+            //Fin Modificación - FernandoAMartinez - 15/04/2020
         }
 
         protected override void OnStart()

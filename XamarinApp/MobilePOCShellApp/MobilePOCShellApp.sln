@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePOCShellApp.Android", "MobilePOCShellApp.Android\MobilePOCShellApp.Android.csproj", "{AB56891B-DE18-4722-B10D-E82D7662DB55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePOCShellApp", "MobilePOCShellApp\MobilePOCShellApp.csproj", "{BF541FE4-059C-4BF6-8B4E-CA8DBD2BB086}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobilePOCShellApp", "MobilePOCShellApp\MobilePOCShellApp.csproj", "{BF541FE4-059C-4BF6-8B4E-CA8DBD2BB086}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePOCAPI", "MobilePOCAPI\MobilePOCAPI.csproj", "{FB26C936-62E1-4C6C-94CD-37F2F688C558}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{BF541FE4-059C-4BF6-8B4E-CA8DBD2BB086}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF541FE4-059C-4BF6-8B4E-CA8DBD2BB086}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF541FE4-059C-4BF6-8B4E-CA8DBD2BB086}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FB26C936-62E1-4C6C-94CD-37F2F688C558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB26C936-62E1-4C6C-94CD-37F2F688C558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB26C936-62E1-4C6C-94CD-37F2F688C558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB26C936-62E1-4C6C-94CD-37F2F688C558}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

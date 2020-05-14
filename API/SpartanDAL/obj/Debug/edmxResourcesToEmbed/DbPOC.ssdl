@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MobilePOCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Usuario" Type="nvarchar(max)" />
+    <Property Name="Contrasena" Type="nvarchar(max)" />
+    <Property Name="NombreCompleto" Type="nvarchar(max)" />
+    <Property Name="Mail" Type="nvarchar(max)" />
+    <Property Name="FechaNacimiento" Type="date" />
+    <Property Name="IdUsuarioPerfil" Type="int" />
+    <Property Name="IdUsuarioSeguridad" Type="int" />
+  </EntityType>
+  <EntityType Name="UsuarioPerfil">
+    <Key>
+      <PropertyRef Name="IdUsuarioPerfil" />
+    </Key>
+    <Property Name="IdUsuarioPerfil" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FotoPerfil" Type="varbinary(max)" />
+    <Property Name="EstadoPerfil" Type="nvarchar(max)" />
+    <Property Name="ScoreJugador" Type="int" />
+    <Property Name="ScoreObservador" Type="int" />
+    <Property Name="ScoreGlobal" Type="int" />
+  </EntityType>
+  <EntityType Name="UsuarioSeguridad">
+    <Key>
+      <PropertyRef Name="IdUsuarioSeguridad" />
+    </Key>
+    <Property Name="IdUsuarioSeguridad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PreguntaSecreta" Type="nvarchar(max)" />
+    <Property Name="RespuestaSecreta" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK__Usuario__IdUsuar__3B75D760">
+    <End Role="UsuarioPerfil" Type="Self.UsuarioPerfil" Multiplicity="0..1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuarioPerfil">
+        <PropertyRef Name="IdUsuarioPerfil" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="IdUsuarioPerfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Usuario__IdUsuar__3C69FB99">
+    <End Role="UsuarioSeguridad" Type="Self.UsuarioSeguridad" Multiplicity="0..1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UsuarioSeguridad">
+        <PropertyRef Name="IdUsuarioSeguridad" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="IdUsuarioSeguridad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MobilePOCModelStoreContainer">
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsuarioPerfil" EntityType="Self.UsuarioPerfil" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsuarioSeguridad" EntityType="Self.UsuarioSeguridad" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Usuario__IdUsuar__3B75D760" Association="Self.FK__Usuario__IdUsuar__3B75D760">
+      <End Role="UsuarioPerfil" EntitySet="UsuarioPerfil" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Usuario__IdUsuar__3C69FB99" Association="Self.FK__Usuario__IdUsuar__3C69FB99">
+      <End Role="UsuarioSeguridad" EntitySet="UsuarioSeguridad" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

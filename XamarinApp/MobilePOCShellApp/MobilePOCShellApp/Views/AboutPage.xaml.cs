@@ -2,6 +2,9 @@
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using MobilePOCAPI;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace MobilePOCShellApp.Views
 {
@@ -13,6 +16,15 @@ namespace MobilePOCShellApp.Views
         public AboutPage()
         {
             InitializeComponent();
+            //CallApi();
         }
+
+        //public async void CallApi() 
+        //{
+        //    //var listaUsuarios = ApiConsumer.API.GetListFromJson<List<Models.Usuario>>();
+        //
+        //    //string response = await ApiConsumer.API.GetAllASync();
+        //    //responseObject.Text = response;
+        //}
     }
 }

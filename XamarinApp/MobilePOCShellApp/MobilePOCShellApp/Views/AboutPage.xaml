@@ -74,6 +74,13 @@
                         Command="{Binding OpenWebCommand}"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="White" />
+                <Frame BackgroundColor="AliceBlue" 
+                       Margin="0,50,0,0"
+                       HorizontalOptions="FillAndExpand" 
+                       VerticalOptions="EndAndExpand" 
+                       BorderColor="Black">
+                    <Label x:Name="responseObject" Text="response" HorizontalOptions="Center"/>
+                </Frame>
             </StackLayout>
         </ScrollView>
     </Grid>

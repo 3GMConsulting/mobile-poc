@@ -1,0 +1,5 @@
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanBLL\bin\Debug\SpartanBLL.dll
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanBLL\bin\Debug\SpartanBLL.pdb
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanBLL\obj\Debug\SpartanBLL.csprojAssemblyReference.cache
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanBLL\obj\Debug\SpartanBLL.dll
+C:\Users\Gaudi\Documents\3GM Consulting\Repo Git\API\SpartanBLL\obj\Debug\SpartanBLL.pdb

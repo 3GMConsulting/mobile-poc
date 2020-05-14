@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XiP5kIuD+t0mn1h2z9N2cOM33iugC1B8dkw5Cmd457VppSfERTnCECX8hOgVPam4wm4U0gEINodwCJjui7qveQ==",
+  "dgSpecHash": "KpS56Xysf7/FW3UYdNuXJfCMs/0LAs+njWkyZ7ewMKo9Zij7pUuPC+DZxOFtEySOioxFxrZYoYMOopR1TkeKBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fernando.b.martinez\\Source\\Repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android\\MobilePOCShellApp.Android.csproj",
+  "projectFilePath": "C:\\Users\\fernando.b.martinez\\source\\repos\\mobile-poc\\XamarinApp\\MobilePOCShellApp\\MobilePOCShellApp.Android\\MobilePOCShellApp.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\fernando.b.martinez\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\fernando.b.martinez\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

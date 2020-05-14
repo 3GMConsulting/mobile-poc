@@ -15,6 +15,9 @@ namespace MobilePOCShellApp.Views
         public SignInPage()
         {
             InitializeComponent();
+            //BindingContext = new ViewModels.SignInViewModel();
         }
+
+        public async void AuthenticateUserCommand() => await DisplayAlert("Login", "This is your login", "ok");
     }
 }

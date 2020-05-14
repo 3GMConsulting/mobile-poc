@@ -4,28 +4,38 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MobilePOCShellApp.Views.SignInPage">
-    <!--Page Content--> 
+             x:Class="MobilePOCShellApp.Views.SignInPage"
+             xmlns:vm="clr-namespace:MobilePOCShellApp.ViewModels"
+             Title="{Binding Title}"
+             BackgroundImageSource="sign_in_bg.jpg">
+    <!--Page Content-->
+    <ContentPage.BindingContext>
+        <vm:SignInViewModel />
+    </ContentPage.BindingContext>
+    
     <ContentPage.Content>
-
         <!--Begin StackLayout-->
-        <StackLayout BackgroundColor="AliceBlue">
-            <StackLayout BackgroundColor="Accent" Margin="10,10,10,10">
-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+        <StackLayout> 
+            <!--BackgroundColor="DarkSlateGray"-->
+            <!--Logo-->
+            <StackLayout Padding="0,40,0,40">
+                <ContentView VerticalOptions="FillAndExpand">
+                    <!--BackgroundColor="Accent"-->
                     <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
                 </ContentView>
             </StackLayout>
-            <StackLayout BackgroundColor="AliceBlue">
+            
+            <!--Controls Stack-->
+            <StackLayout>
+                <!--BackgroundColor="DarkSlateGray"-->
                 <!--Username Begin-->
-                <StackLayout>
+                <StackLayout Padding="0,25,0,0">
                     <!--<Label Text="Username" HorizontalOptions="Start" 
                            VerticalOptions="Start" FontSize="Large" 
                            Margin="50,25,50,0"/>-->
-                    <Entry Text="Username" 
-                           HorizontalOptions="Fill" 
-                           VerticalOptions="Center"
-                           Margin="50,0,50,0"
-                           FontSize="Medium"/>
+                    <Entry Placeholder="Username" PlaceholderColor="White" 
+                           HorizontalOptions="Fill" VerticalOptions="Center" 
+                           Margin="50,0,50,0" FontSize="Medium" TextColor="White"/>
                 </StackLayout>
 
                 <!--Password Begin-->
@@ -33,36 +43,47 @@
                     <!--<Label Text="Password" HorizontalOptions="Start" 
                            VerticalOptions="Start" FontSize="Large" 
                            Margin="50,25,50,0"/>-->
-                    <Entry Text="Password" 
-                           HorizontalOptions="Fill" 
-                           VerticalOptions="Center"
-                           Margin="50,0,50,0"
-                           FontSize="Medium"/>
+                    <Entry Placeholder="Password" PlaceholderColor="White"
+                           HorizontalOptions="Fill" VerticalOptions="Center"
+                           Margin="50,0,50,0" FontSize="Medium" TextColor="White"
+                           IsPassword="True"/>
                     <Label Text="Forget Password?" HorizontalOptions="End"
-                           VerticalOptions="Center" Margin="0,0,50,0"/>
+                           VerticalOptions="Center" Margin="0,0,50,0"
+                           TextColor="Aquamarine" FontAttributes="Bold">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OnForgetPasswordTap}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
                 </StackLayout>
                 
                 <!--Sign In Button-->
                 <StackLayout>
-                    <Button Text="Sign In" HorizontalOptions="CenterAndExpand"
-                            VerticalOptions="Start" FontAttributes="Bold"
-                            FontSize="Medium"
-                            Margin="25,25,25,0"/>
+                        <Button Text="Sign In" 
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                Command="{Binding AuthenticateUserCommand}"
+                                FontAttributes="Bold"
+                                FontSize="Medium"
+                                Margin="50,25,50,0"
+                                Visual="Material"/>
                     <Label Text="Sign In using:" HorizontalOptions="CenterAndExpand"
                            VerticalOptions="CenterAndExpand" FontAttributes="Italic"
-                           FontSize="Caption" Margin="0,5,0,0"/>
+                           FontSize="Caption" Margin="0,5,0,0"  TextColor="Aquamarine"/>
                     <Button Text="Google" ImageSource=""
-                            HorizontalOptions="CenterAndExpand"
+                            HorizontalOptions="FillAndExpand"
                             VerticalOptions="Start" FontAttributes="Bold"
-                            FontSize="Medium" Margin="0,5,0,0"/>
+                            FontSize="Medium" Margin="50,0,50,0"
+                            Visual="Material"/>
                     <Button Text="Facebook" ImageSource=""
-                            HorizontalOptions="CenterAndExpand"
+                            HorizontalOptions="FillAndExpand"
                             VerticalOptions="Start" FontAttributes="Bold"
-                            FontSize="Medium"/>
+                            FontSize="Medium" Margin="50,0,50,0"
+                            Visual="Material"/>
+
 
                     <Label Text="Don't have an account?" HorizontalOptions="CenterAndExpand"
                            VerticalOptions="CenterAndExpand" FontAttributes="Italic"
-                           FontSize="Caption" Margin="0,5,0,0"/>
+                           FontSize="Caption" Margin="0,5,0,0"  TextColor="Aquamarine"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>

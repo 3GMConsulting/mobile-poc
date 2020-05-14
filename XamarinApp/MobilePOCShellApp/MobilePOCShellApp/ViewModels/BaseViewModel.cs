@@ -13,6 +13,7 @@ namespace MobilePOCShellApp.ViewModels
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public IDataStore<Usuario> UserDataStore => DependencyService.Get<IDataStore<Usuario>>();
 
         bool isBusy = false;
         public bool IsBusy
